@@ -21,7 +21,7 @@ body {
     padding: 1rem;
     border-radius: 8px;
     display: flex;
-
+    align-items: center;
   }
   
   .icon {
@@ -30,6 +30,8 @@ body {
 
   .emojis {
     display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
     grid-template-areas: 
     "smile smile clink clink"
     "laugh laugh seed seed"

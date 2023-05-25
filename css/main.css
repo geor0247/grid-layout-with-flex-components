@@ -20,8 +20,59 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    display: flex;
+
   }
   
   .icon {
     font-size: 4rem;
   }
+
+  .emojis {
+    display: grid;
+    grid-template-areas: 
+    "smile smile clink clink"
+    "laugh laugh seed seed"
+  }
+  .emojis .emoji:nth-child(1){
+    grid-area: smile;
+
+  }
+  .emojis .emoji:nth-child(2){
+    grid-area: clink;
+
+  }
+  .emojis .emoji:nth-child(3){
+    grid-area: laugh;
+
+  }
+  .emojis .emoji:nth-child(4){
+    grid-area: seed;
+
+  }
+
+.emojis .emoji:nth-child(1){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.emojis .emoji:nth-child(2){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.emojis .emoji:nth-child(3){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.emojis .emoji:nth-child(4){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  order: -1;
+}
